@@ -15,7 +15,8 @@
             </http:error-response>
         </http:listener>
         <apikit:router config-ref="sivatestapi-config" />
-        <error-handler>
+        <logger level="INFO" doc:name="Logger" doc:id="84436953-9191-470f-b33d-54a5973b48a8" />
+		<error-handler>
             <on-error-propagate type="APIKIT:BAD_REQUEST">
                 <ee:transform doc:name="Transform Message">
                     <ee:message>
